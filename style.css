@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Abel", serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+}
+
+.messages {
+    display: none;
+    position: absolute;
+    right: -30%;
+    bottom: 20px;
+    padding: 0 8px;
+    border: 1px solid #000;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    min-width: 150px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    animation: animation_popup 4s linear;
+}
+
+.message_success {
+    background-color: #1dc400;
+    color: #fff;
+}
+
+.message_error {
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+}
+
+@keyframes animation_popup {
+    form {
+        right: -30%;
+    }
+
+    20% {
+        right: 0;
+    }
+
+    80% {
+        right: 0;
+    }
+
+    to {
+        right: -30%;
+    }
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+
+form {
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid #000;
+    align-items: center;
+    overflow: hidden;
+}
+
+form input {
+    padding: 0 5px;
+    outline: none;
+    font-size: 1rem;
+    border: none;
+    height: 50px;
+}
+
+form button {
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-left: 1px solid #000;
+    background-color: #64b1f4;
+    padding: 4px;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+}
+
+form button:hover {
+    background-color: #358bd7;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.titles tr th {
+    padding: 3px 20px;
+    font-size: 1.2rem;
+    font-weight: 550;
+    background-color: #64b1f4;
+}
+
+.list_options {
+    display: flex;
+    gap: 15px;
+    padding: 5px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.list_options button {
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.list_options button img {
+    width: 30px;
+}
+
+.people_name,
+.people_contact {
+    text-align: center;
+}

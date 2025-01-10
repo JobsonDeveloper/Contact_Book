@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="messages" id="page_popUp"></div>
+
+    <main class="container">
+
+        <h1>Contact Book</h1>
+
+        <form id="user_form">
+            <input type="text" id="input_name" placeholder="Nome">
+            <input type="number" id="input_phone" placeholder="Telefone">
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <table>
+            <thead class="titles">
+                <tr >
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+
+            <tbody class="content">
+                <tr>
+                    <td class="people_name" id="people_name">Maria</td>
+                    <td class="people_contact" id="people_contact">777</td>
+                    <td class="list_options">
+                        <button id="button_edit">
+                            <img src="images/pen.png" alt="Icone de lapis">
+                        </button>
+
+                        <button id="button_delete">
+                            <img src="images/trash-bin.png" alt="Icone de lixeira">
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="people_name" id="people_name">Maria</td>
+                    <td class="people_contact" id="people_contact">777</td>
+                    <td class="list_options">
+                        <button id="button_edit">
+                            <img src="images/pen.png" alt="Icone de lapis">
+                        </button>
+
+                        <button id="button_delete">
+                            <img src="images/trash-bin.png" alt="Icone de lixeira">
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
