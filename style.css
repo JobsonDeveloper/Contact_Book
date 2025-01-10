@@ -89,6 +89,7 @@ form input {
     font-size: 1rem;
     border: none;
     height: 50px;
+    text-align: center;
 }
 
 form button {
