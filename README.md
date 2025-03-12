@@ -1,4 +1,3 @@
-### Lista de tarefas
 [Veja o site](https://contact-book-omega-three.vercel.app/)
 
 ### Ferramentas utiliizadas:
